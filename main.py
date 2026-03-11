@@ -1,3 +1,6 @@
+
+## modificacion del main.py
+print("El programa está corriendo")
 class OrderSystem:
 
     def __init__(self, customer_type, items, payment_method):
@@ -48,10 +51,33 @@ class OrderSystem:
 
         elif format_type == "json":
             return f'{{"total": {total}}}'
+order = OrderSystem(
+    "vip",
+    [100, 50, 25],
+    "card")
 
+total = order.calculate_total()
 
-# prueba del programa
-order = OrderSystem("vip", [100, 50, 25], "card")
+print("Total:", total)
 
 order.process_payment()
-print(order.generate_report("text"))
+
+order.save_order(1)
+
+print(order.generate_report("text"))   
+        
+
+"""from controller.order_controller import OrderController # type: ignore
+
+
+if __name__ == "__main__":
+
+    items = [100, 50, 25]
+
+    controller = OrderController(
+        customer_type="vip",
+        items=items,
+        payment_method="card"
+    )
+
+    controller.process_order(order_id=1, report_format="text")"""
