@@ -1,4 +1,4 @@
-
+"""
 ## modificacion del main.py
 print("El programa está corriendo")
 class OrderSystem:
@@ -64,15 +64,14 @@ order.process_payment()
 
 order.save_order(1)
 
-print(order.generate_report("text"))   
+print(order.generate_report("text"))  """ 
         
-
-"""from controller.order_controller import OrderController # type: ignore
+from controller.order_controller import OrderController
 
 
 if __name__ == "__main__":
 
-    items = [100, 50, 25]
+    items = [100, 50, 25, 15]
 
     controller = OrderController(
         customer_type="vip",
@@ -80,4 +79,4 @@ if __name__ == "__main__":
         payment_method="card"
     )
 
-    controller.process_order(order_id=1, report_format="text")"""
+    controller.process_order(order_id=1, report_format= "text")
