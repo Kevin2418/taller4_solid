@@ -1,0 +1,11 @@
+taller4 solid 
+Requerimientos 
+• SRP: Separar responsabilidades en distintas clases (pedido, descuentos, impuestos,
+pagos, persistencia, reportes).
+• OCP: Diseñar el sistema para permitir nuevos tipos de descuento, métodos de pago
+o formatos de reporte sin modificar el código existente.
+• LSP: Asegurar que todas las subclases respeten el comportamiento esperado de sus
+clases base.
+• ISP: Dividir interfaces demasiado amplias en interfaces más pequeñas y específicas.
+• DIP: Invertir dependencias para que la aplicación no dependa directamente de una
+
